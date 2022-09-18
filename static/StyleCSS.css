@@ -1,0 +1,27 @@
+body{
+background-color: #e0ffff;
+}
+#blinking{
+font-family: Sans-serif;
+color: red;
+font-weight: bold;
+font-size: 2rem;
+animation: blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+0% {color: #10c018;}
+25% {color: #1056c0;}
+50% {color: #ef0a1a;}
+75% {color: #244878;}
+100% {color: #04a1d5;}
+}
+
+#bkg1{
+background-color: black;
+}
+
+#detail1 {
+  background-image: url('images/netflix_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

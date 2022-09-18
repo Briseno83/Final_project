@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<style>
+body {
+  background-image: url('static//film.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style></HEAD>
+<script type="text/javascript" src="{{ url_for('static',filename='functions.js') }}"></script>
+<BODY class="leggedin" BGCOLOR="#FFFFFF" TEXT="000000"> </BODY>
+<TITLE> --  Matrix Video Rental  -- > </TITLE>
+<BODY>
+<H1 ALIGN=center>Matrix Videos Online Rental Form</H1>
+
+
+<FORM NAME=frmInput onsubmit="return ValidateEmail()" "validatePhoneNumber()" METHOD="post" ACTION="">
+
+ 
+<H3>Please input your name, telephone number, and e-mail address:</H3>
+<table style="width:50%">
+<tr> 
+ <td><H3>Name:</td><td><INPUT TYPE="text" id="txtName" NAME="txtName" placeholder="Enter your Full Name" minlength="5" required></H3></td>
+</tr>
+<tr>  
+ <td><h3>Telephone Number:</td> <td><INPUT TYPE="tel" pattern="([0-9]{3})?[-. ]?([0-9]{3})[-. ]?([0-9]{4})" required placeholder="Enter a 10 digits number" id="txtPhoneNum" NAME="txtPhoneNum"><h3></td>
+</tr>
+<tr>
+ <td><h3 align=left>E-mail Address:</td><td> <INPUT TYPE="text" NAME="txtEmail" placeholder="user@domain.com" required><h3></td>
+</tr>
+</table>
+
+<H3>Now, select a video to rent and have delivered:</H3>
+<SELECT id="ddselect" NAME="lstVideos" onchange="ddlselect();"> 
+<OPTION value=0> </OPTION>
+<OPTION value=2>300</OPTION>
+<OPTION value=1>Avengers: Endgame</OPTION>
+<OPTION value=2>Batman - The Dark Knight</OPTION>
+<OPTION value=3>Black Widow</OPTION
+<OPTION value=1>Coco</OPTION>
+<OPTION value=2>Iron Man 3</OPTION>
+<OPTION value=2>Man of Steel</OPTION>
+<OPTION value=2>Spiderman: No Way Home</OPTION>
+<OPTION value=3>Wonder Woman</OPTION>
+<OPTION value=2>The Expendables 2</OPTION>
+<OPTION value=3>Minions: The Rise of Gru</OPTION>
+</SELECT>
+
+<table style="width:100%">
+ <tr>
+<td><h3>The video you have selected is:</td><td><INPUT TYPE="text" NAME="txtVideo" id ="txtVideo"></h3></td>
+<td><h3>The price of this video is:</td><td> <INPUT TYPE="text" id="txtprice" NAME="txtprice"></h3></td>
+</tr>
+<tr>
+<td><h3>The delivery fee and taxes are:</td><td> <INPUT TYPE="text" id="txtDeliveryFee" NAME="txtDeliveryFee"></h3></td>
+</tr>
+<tr>
+<td><h3 align=center style="color:blue">The total cost is:</td><td>  <INPUT TYPE="text" id="txtTotalCost" NAME="txtTotalCost"></h3></td>
+
+</table>
+<H3>If you are satisfied with the results and want the video 
+delivered, click the Submit button. To start over, click the Reset button.</H3> 
+<INPUT TYPE=submit NAME=cmdSubmit VALUE="Submit Order"> &nbsp;&nbsp;&nbsp;
+<INPUT NAME=cmdReset TYPE=reset VALUE="Clear Entries"> 
+<br><br><br>
+
+</FORM>
+
+</BODY>
+</HTML>

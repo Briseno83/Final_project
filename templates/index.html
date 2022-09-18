@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block frames %}
+	<frameset rows="10%,73%,17%">
+		<frame src={{ 'banner_file.html' }} name="banner">
+	<frameset cols="70%,30%">
+		<frame src={{ 'rental_main.html' }} name="main">
+		<frame src={{ 'rental_images.html' }} name="content">	
+	</frameset>
+		<frame src={{ 'detail.html' }}></frameset>
+{% endblock frames %}
