@@ -11,7 +11,7 @@ app.secret_key = 'Matrix2022'
 app.config['MYSQL_HOST'] = 'us-cdbr-east-06.cleardb.net'
 app.config['MYSQL_USER'] = 'b376e0977a92e9'
 app.config['MYSQL_PASSWORD'] = '5ab37911'
-app.config['MYSQL_DB'] = 'video'
+app.config['MYSQL_DB'] = 'heroku_19747f33ef4028a'
 
 # Intialize MySQL
 mysql = MySQL(app)
